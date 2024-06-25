@@ -1,0 +1,11 @@
+apisix:
+  router:
+    http: 'radixtree_uri_with_parameter'
+
+deployment:
+  admin:
+    allow_admin:
+      - 0.0.0.0/0
+  etcd:
+    host:
+      - http://etcd:2397
